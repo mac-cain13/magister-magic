@@ -2,7 +2,7 @@
 // @name         🌈 Magister 💝 Magic 🦄
 // @namespace    http://mathijskadijk.nl/
 // @version      0.1
-// @description  Making Magister great again!
+// @description  Make Magister great again!
 // @author       Mathijs Kadijk
 // @match        https://toetsanalyse.rowis.nl/*
 // @match        https://corlaer.magister.net/*
@@ -22,7 +22,7 @@
         let cijfers = GM_getValue("cijfers");
         let invoervelden = [...document.getElementsByClassName("cijfer-text-input")]
 
-        if (invoervelden.length != cijfers.length) {
+        if (invoervelden.length === cijfers.length) {
             invoervelden.map(function(x, i) { x.value = cijfers[i] })
         } else {
             alert("Er zijn niet evenveel invoervelden (" + invoervelden.length + ") als cijfers (" + cijfers.length + ").")
